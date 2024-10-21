@@ -1,0 +1,13 @@
+services:
+  ros2:
+    container_name: ros2
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      - ./:/tmp/ros2_common_ws/
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    tty: true
+    working_dir: /tmp/ros2_common_ws
+    network_mode: host

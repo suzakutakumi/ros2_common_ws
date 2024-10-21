@@ -1,0 +1,16 @@
+*.pyc
+*.iml
+*.swp
+.project
+.pydevproject
+.DS_Store
+.idea
+
+.vscode/*
+
+build
+install
+log
+
+src/*
+!src/pubsub_example
