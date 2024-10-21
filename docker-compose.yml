@@ -3,7 +3,7 @@ services:
     container_name: ros2
     build: .
     environment:
-      - DISPLAY=${DISPLAY}
+      - DISPLAY=${DISPLAY} #Macの方はDISPLAY=host.docker.internal:0
       - QT_X11_NO_MITSHM=1
     volumes:
       - ./:/tmp/ros2_common_ws/
