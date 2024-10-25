@@ -1,0 +1,5 @@
+{
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "ros2",
+	"workspaceFolder": "/tmp/ros2_common_ws"
+}
