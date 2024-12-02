@@ -11,3 +11,6 @@ RUN apt install wget -y
 RUN touch /root/.bashrc
 RUN echo "umask 0000" >> /root/.bashrc
 RUN echo "source /opt/ros/foxy/setup.bash" >> /root/.bashrc
+
+RUN apt install python3-pip -y
+RUN pip install opencv-python
